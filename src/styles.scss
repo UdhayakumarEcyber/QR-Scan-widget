@@ -1,0 +1,94 @@
+.model{
+	display: flex; 
+	color: #fff;
+	font-family: "Nunito";
+	width: 650px;
+	height: 450px;
+    background-color: #2aa3f9;
+	color: #fff; 
+	width: 100%;
+	height: 100%;
+
+	border-radius: 0;
+	padding: 20px;
+	box-sizing: border-box;   
+
+     .model-lft{
+        display: flex;
+        width: 62%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+     
+        h3{
+                display: inline-block;
+                width: 100%;
+                font-size: 3em;
+                margin: 0;
+                padding: 0;
+                line-height: 1em;
+                text-align: center;
+
+                em{ 
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 0.7em;
+                    font-style: normal;
+                }
+            }
+     } 
+
+     .model-rgt{
+        // display: inline-block;
+        width: 38%;
+
+        display: flex;
+        // width: 62%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .model-rgt-content{
+            display: inline-block;
+            width: 100%;
+
+            .qr-code{
+                display: inline-block;
+                width: 95%;
+                background: url("https://static.iviva.com/images/QR-code.svg") no-repeat 0 0;
+                height: 230px;
+                background-size: contain;
+            }
+
+                .scan_txt-box{
+                    display: inline-flex;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    width: 94%;
+                    margin-top: 1em;
+
+                    .logo{
+                        display: inline-block;
+                        width: 54px;
+                        background: url("https://static.iviva.com./images/Udhayimages/Lucy_home_new/Lucy-icon.svg") no-repeat 0 0;
+                        height: 45px;
+                        background-size: cover;
+                        margin: 0.9em 0.8em 0.8em 0.8em;
+                    } 
+
+                    p{
+                        display: inline-block;
+                        font-size: 1em;
+                        color: #424242;
+                        width: 54%;
+                        line-height: 1.7em;
+                    }  
+                
+                }
+            } 
+        }
+ }
+
+  

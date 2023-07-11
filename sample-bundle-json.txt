@@ -1,0 +1,37 @@
+{
+    "id": "a0bfa626-a85f-48df-e44f-f9339ca919ce",
+    "author": "",
+    "widgets": [
+        {
+            "id": "qrScan_widgets",
+            "name": "qrScan_widgets",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+    ],
+    "sidebarLinks": [
+        {
+            "id": "qrScan_widgetsLink",
+            "label": "",
+            "description": "",
+            "target": "",
+            "icon": "",
+            "roles":[]
+        }
+    ],
+    "uis": [
+        {
+            "id": "qrScan_widgetsLink",
+            "label":"",
+            "description": "",
+            "roles": []
+        }
+    ],
+    "menuItems": [
+        {
+            "id": "qrScan_widgetsLink",
+            "title": "qrScan_widgets"
+        }
+    ]
+}

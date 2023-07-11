@@ -1,0 +1,22 @@
+{
+    "id": "501c651c-b714-4c5e-acec-59945cfc9be4",
+    "author": "",
+    "widgets": [
+        {
+            "id": "qrScan_widgets",
+            "name": "QR_Code_widgets",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+    ],
+    "sidebarLinks": [
+        
+    ],
+    "uis": [
+       
+    ],
+    "menuItems": [
+        
+    ]
+}
