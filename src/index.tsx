@@ -24,7 +24,10 @@ const QrScan_widgetsWidget: React.FunctionComponent<IWidgetProps> = (props:any) 
 
                 <div className="model-rgt">
                     <div className="model-rgt-content">
+                    <div className="scan_txt-box">
                         <canvas id="canvas" className="qr-code"></canvas> 
+
+                        </div> 
                         <div className="scan_txt-box">
                             <div className="logo"></div>
                             <p>Scan with Lucy Mobile</p>
@@ -49,10 +52,10 @@ registerWidget({
         layout: {
             w: 14,
             h: 12,
-            minH: 10,
-            minW: 12,
-            maxH: 13,
-            maxW: 15
+            minH: 12,
+            minW: 14,
+            maxH: 12,
+            maxW: 14
         }
     }
 });

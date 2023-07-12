@@ -398,7 +398,7 @@ if ($defineProperty) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".model {\n  display: flex;\n  color: #fff;\n  font-family: \"Nunito\";\n  width: 650px;\n  height: 450px;\n  background-color: #2aa3f9;\n  color: #fff;\n  width: 100%;\n  height: 100%;\n  border-radius: 0;\n  padding: 20px;\n  box-sizing: border-box;\n}\n.model .model-lft {\n  display: flex;\n  width: 62%;\n  height: 100%;\n  text-align: center;\n  align-items: center;\n  justify-content: center;\n}\n.model .model-lft h3 {\n  display: inline-block;\n  width: 100%;\n  font-size: 3em;\n  margin: 0;\n  padding: 0;\n  line-height: 1em;\n  text-align: center;\n}\n.model .model-lft h3 em {\n  display: inline-block;\n  width: 100%;\n  font-size: 0.7em;\n  font-style: normal;\n}\n.model .model-rgt {\n  width: 38%;\n  display: flex;\n  height: 100%;\n  text-align: center;\n  align-items: center;\n  justify-content: center;\n}\n.model .model-rgt .model-rgt-content {\n  display: inline-block;\n  width: 100%;\n}\n.model .model-rgt .model-rgt-content .qr-code {\n  display: inline-block;\n  width: 95%;\n  background: url(\"https://static.iviva.com/images/QR-code.svg\") no-repeat 0 0;\n  height: 230px;\n  background-size: contain;\n}\n.model .model-rgt .model-rgt-content .scan_txt-box {\n  display: inline-flex;\n  border-radius: 10px;\n  background-color: #fff;\n  width: 94%;\n  margin-top: 1em;\n}\n.model .model-rgt .model-rgt-content .scan_txt-box .logo {\n  display: inline-block;\n  width: 54px;\n  background: url(\"https://static.iviva.com./images/Udhayimages/Lucy_home_new/Lucy-icon.svg\") no-repeat 0 0;\n  height: 45px;\n  background-size: cover;\n  margin: 0.9em 0.8em 0.8em 0.8em;\n}\n.model .model-rgt .model-rgt-content .scan_txt-box p {\n  display: inline-block;\n  font-size: 1em;\n  color: #424242;\n  width: 54%;\n  line-height: 1.7em;\n}", ""]);
+exports.push([module.i, ".model {\n  display: flex;\n  color: #fff;\n  font-family: \"Nunito\";\n  width: 650px;\n  height: 450px;\n  background-color: #2aa3f9;\n  color: #fff;\n  width: 100%;\n  height: 100%;\n  border-radius: 0;\n  padding: 20px;\n  box-sizing: border-box;\n}\n.model .model-lft {\n  display: flex;\n  width: 62%;\n  height: 100%;\n  text-align: center;\n  align-items: center;\n  justify-content: center;\n}\n.model .model-lft h3 {\n  display: inline-block;\n  width: 100%;\n  font-size: 3em;\n  margin: 0;\n  padding: 0;\n  line-height: 1em;\n  text-align: center;\n}\n.model .model-lft h3 em {\n  display: inline-block;\n  width: 100%;\n  font-size: 0.7em;\n  font-style: normal;\n}\n.model .model-rgt {\n  width: 38%;\n  display: flex;\n  height: 100%;\n  text-align: center;\n  align-items: center;\n  justify-content: center;\n}\n.model .model-rgt .model-rgt-content {\n  display: inline-block;\n  width: 100%;\n}\n.model .model-rgt .model-rgt-content .qr-code {\n  display: inline-block;\n  width: 95%;\n  background: url(\"https://static.iviva.com/images/QR-code.svg\") no-repeat 0 0;\n  height: 205px;\n  background-size: contain;\n  margin: 5%;\n}\n.model .model-rgt .model-rgt-content .scan_txt-box {\n  display: inline-flex;\n  border-radius: 10px;\n  background-color: #fff;\n  width: 94%;\n  margin-top: 1em;\n}\n.model .model-rgt .model-rgt-content .scan_txt-box .logo {\n  display: inline-block;\n  width: 54px;\n  background: url(\"https://static.iviva.com./images/Udhayimages/Lucy_home_new/Lucy-icon.svg\") no-repeat 0 0;\n  height: 45px;\n  background-size: cover;\n  margin: 0.9em 0.8em 0.8em 0.8em;\n}\n.model .model-rgt .model-rgt-content .scan_txt-box p {\n  display: inline-block;\n  font-size: 1em;\n  color: #424242;\n  width: 54%;\n  line-height: 1.7em;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -11864,7 +11864,8 @@ const QrScan_widgetsWidget = (props) => {
                     React.createElement("em", null, "Scan to book"))),
             React.createElement("div", { className: "model-rgt" },
                 React.createElement("div", { className: "model-rgt-content" },
-                    React.createElement("canvas", { id: "canvas", className: "qr-code" }),
+                    React.createElement("div", { className: "scan_txt-box" },
+                        React.createElement("canvas", { id: "canvas", className: "qr-code" })),
                     React.createElement("div", { className: "scan_txt-box" },
                         React.createElement("div", { className: "logo" }),
                         React.createElement("p", null, "Scan with Lucy Mobile")))))));
@@ -11879,10 +11880,10 @@ uxp_1.registerWidget({
         layout: {
             w: 14,
             h: 12,
-            minH: 10,
-            minW: 12,
-            maxH: 13,
-            maxW: 15
+            minH: 12,
+            minW: 14,
+            maxH: 12,
+            maxW: 14
         }
     }
 });
